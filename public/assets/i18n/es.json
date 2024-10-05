@@ -1,0 +1,39 @@
+{
+  "toolbar": {
+    "certification": "Certificado ISO 27001:2022",
+    "home": "Inicio",
+    "rating": "Clasificación"
+  },
+  "home": {
+    "title": "Inicio",
+    "subtitle": "Bienvenido a Eventify",
+    "events": "Eventos Registrados"
+  },
+  "event": {
+    "id": "ID del evento:",
+    "name": "Nombre del evento:",
+    "description": "Descripción del evento:"
+  },
+  "card": {
+    "attendees": "Asistentes facturados:",
+    "averageRating": "Calificación promedio:"
+  },
+  "not-found": {
+    "title": "Página no encontrada",
+    "description": "La página que buscas no existe.",
+    "goBack": "Regresar"
+  },
+  "check": {
+    "in": "Registrarse"
+  },
+  "rating": {
+    "title": "Calificación del evento",
+    "description": "Agregue una calificación para el evento al que asistió",
+    "submit": "Califica el evento",
+    "cancel": "Cancelar",
+    "attendees": "Asistentes",
+    "rating": "Calificación (1-5)",
+    "ticket": "Identificador de ticket"
+  }
+
+}

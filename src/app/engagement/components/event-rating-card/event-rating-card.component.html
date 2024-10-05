@@ -1,0 +1,40 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{ 'rating.submit' | translate}}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form (ngSubmit)="rateEvent()" #ratingForm="ngForm">
+
+      <div class="form-group">
+        <label for="ticketIdentifier">{{'rating.ticket' | translate}}</label>
+        <input type="text" id="ticketIdentifier" [(ngModel)]="ticketIdentifier" name="ticketIdentifier" required>
+      </div>
+
+
+      <div class="form-group">
+        <label for="rating">{{'rating.rating' | translate}}</label>
+        <input type="number" id="rating" [(ngModel)]="rating" name="rating" min="1" max="5" required>
+      </div>
+
+
+      <button mat-raised-button color="primary" type="submit" [disabled]="ratingForm.invalid">{{'rating.submit' | translate}}</button>
+    </form>
+  </mat-card-content>
+
+  <mat-card-footer *ngIf="message">
+    <span>{{ message }}</span>
+  </mat-card-footer>
+</mat-card>
+
+<!-- Tarjeta con los detalles del ticket -->
+<mat-card *ngIf="showTicketCard" class="ticket-card">
+  <mat-card-header>
+    <mat-card-title>Ticket Details</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <p><strong>Ticket Identifier:</strong> {{ attendee.ticketIdentifier }}</p>
+    <p><strong>Attendee Name:</strong> {{ attendee.firstName }} {{ attendee.lastName }}</p>
+    <p><strong>Event ID:</strong> {{ attendee.eventId }}</p>
+    <p><strong>Checked In At:</strong> {{ attendee.checkedInAt | date:'short' }}</p>
+  </mat-card-content>
+</mat-card>

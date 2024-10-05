@@ -1,0 +1,26 @@
+<mat-toolbar>
+  <a
+    routerLink="/"
+    aria-label="Eventify Logo"
+  >
+    <img src="https://files.aircargobook.com/live/companies/75243/AppIcon_1673416962_5510e4cbb85281230c15197a6d46353c.png" width="80" alt="eventify Logo" class="logo" />
+  </a>
+
+  <span class="spacer">{{'toolbar.certification' | translate}}</span>
+
+  <div class="nav-link">
+
+    <button mat-button  [routerLink]="'/home'" class="nav-link">
+      {{'toolbar.home' | translate}}
+    </button>
+
+    <button mat-button [routerLink]="'/engagement/ratings/new'" class="nav-link">
+      {{'toolbar.rating' | translate}}
+    </button>
+  </div>
+
+
+  <span class="language-switcher">
+    <app-language-switcher></app-language-switcher>
+  </span>
+</mat-toolbar>

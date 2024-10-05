@@ -1,5 +1,12 @@
 # Upc2402si729eau202223781
 
+# Summary
+### In this project, we will create a simple application that will allow us to consume a fake-api using HttpClient. Also, we will using internationalization to translate the application to different languages using i18n.
+
+# Author
+### Developer by Joan Jefferson Talizo Balbin
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.7.
 
 ## Development server
